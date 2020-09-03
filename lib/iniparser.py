@@ -7,6 +7,6 @@ sys.path.insert(0, parent_dir)
 config = configparser.ConfigParser()
 config.read('../doc/settings.ini')
 addr = config['socket']['addr']
-port = config['socket']['port']
-print(addr)
+port = int(config['socket']['port'])
+
 
