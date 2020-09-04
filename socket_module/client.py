@@ -23,7 +23,7 @@ class Client_socket:
 
     def send(self):
         while True:
-            msg = input("Send to server")
+            msg = input("Send to server ")
             self.client.sendall(msg.encode())
             logger.debug("Client : send data {}!".format(msg))
 
