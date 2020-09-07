@@ -1,3 +1,7 @@
 configparser
 loguru
 socket
+sqlalchemy
+requests
+numpy
+pandas
