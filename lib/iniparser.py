@@ -10,18 +10,11 @@ config.read('../doc/settings.ini')
 addr = config['socket']['addr']
 port = int(config['socket']['port'])
 
-
-
-# maxdb = psycopg2.connect(
-#   user=config['database']['user'],
-#     password=config['database']['password'],
-#     host=config['database']['addr'],
-#     port=int(config['database']['port']),
-#     database=config['database']['database'],
-#   )
-# cursor=maxdb.cursor()
-
 db_url = 'mysql://root:Aa1234@localhost:3306/my_db'
+
+smtp_server = config['gmail_sending']['smtp_server']
+mail_port = config['gmail_sending']['port']
+mail_addr = config['gmail_sending']['sender_email']
 
 
 
