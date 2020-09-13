@@ -1,0 +1,36 @@
+2020-09-12 at 09:43:33 | DEBUG | stock_backtrace: get data success
+2020-09-12 at 09:43:45 | DEBUG | stock_backtrace: get data success
+2020-09-12 at 09:44:42 | DEBUG | stock_backtrace: get data success
+2020-09-12 at 09:49:35 | DEBUG | stock_backtrace: get data success
+2020-09-12 at 09:49:59 | DEBUG | stock_backtrace: get data success
+2020-09-12 at 22:12:06 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:12:06 | DEBUG | Database: init db success
+2020-09-12 at 22:12:07 | ERROR | Database: insertFrame error
+2020-09-12 at 22:13:08 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:13:08 | DEBUG | Database: init db success
+2020-09-12 at 22:13:08 | ERROR | Database: insertFrame error
+2020-09-12 at 22:15:49 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:15:49 | DEBUG | Database: init db success
+2020-09-12 at 22:18:21 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:18:21 | DEBUG | Database: init db success
+2020-09-12 at 22:18:41 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:18:41 | DEBUG | Database: init db success
+2020-09-12 at 22:25:26 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:26:38 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:27:08 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:27:08 | DEBUG | Database: init db success
+2020-09-12 at 22:31:33 | DEBUG | stock_backtrace: get month data
+2020-09-12 at 22:31:53 | DEBUG | stock_backtrace: get month data
+2020-09-12 at 22:33:12 | DEBUG | stock_backtrace: get month data
+2020-09-12 at 22:33:12 | DEBUG | Database: init db success
+2020-09-12 at 22:34:04 | DEBUG | stock_backtrace: get month data
+2020-09-12 at 22:34:04 | DEBUG | Database: init db success
+2020-09-12 at 22:35:15 | DEBUG | stock_backtrace: get month data
+2020-09-12 at 22:35:16 | DEBUG | Database: init db success
+2020-09-12 at 22:49:45 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:49:45 | DEBUG | Database: init db success
+2020-09-12 at 22:50:00 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 22:50:00 | DEBUG | Database: init db success
+2020-09-12 at 23:16:03 | DEBUG | stock_backtrace: get day data
+2020-09-12 at 23:16:03 | DEBUG | Database: init db success
+2020-09-12 at 23:16:03 | DEBUG | Database: insertFrame success

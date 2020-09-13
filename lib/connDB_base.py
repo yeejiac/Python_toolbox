@@ -11,17 +11,21 @@ import pandas as pd
 class ConnDB_base:
     def __init__(self, url):
         self.db_agent = Database_connection(url)
-        # metadata = create_all(self.db_agent)
+        logger.debug("Database: init db success")
 
-    def insertToframe(self, df, tablename):
-        df.to_sql(tablename, con=self.db_agent,if_exists='append')
+    def insertFrame(self, df, tablename):
+        try:
+            df.to_sql(tablename, con=self.db_agent.engine,if_exists='append')
+            logger.debug("Database: insertFrame success")
+        except:
+            logger.error("Database: insertFrame error")
 
     def showTable(self):
         sql = "SELECT * FROM TEST"
         df = pd.read_sql(sql, con=self.db_agent.engine)
         print(df)
 
-if __name__ == '__main__':
-    db = ConnDB_base(db_url)
-    db.showTable()
+# if __name__ == '__main__':
+#     db = ConnDB_base(db_url)
+#     db.showTable()
 

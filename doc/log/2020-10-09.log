@@ -2,3 +2,9 @@
 2020-09-10 at 22:01:26 | ERROR | (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials x9sm6216006pfj.96 - gsmtp')
 2020-09-10 at 22:02:33 | ERROR | (535, b'5.7.8 Username and Password not accepted. Learn more at\n5.7.8  https://support.google.com/mail/?p=BadCredentials q127sm6317846pfb.61 - gsmtp')
 2020-09-10 at 22:03:06 | ERROR | name 'receiver_email' is not defined
+2020-09-10 at 22:09:19 | ERROR | stock_backtrace: data error
+2020-09-10 at 22:12:07 | ERROR | stock_backtrace: data error
+2020-09-10 at 22:12:21 | ERROR | stock_backtrace: data error
+2020-09-10 at 22:13:02 | ERROR | stock_backtrace: data error
+2020-09-10 at 22:14:51 | ERROR | stock_backtrace: data error
+2020-09-10 at 22:15:50 | DEBUG | stock_backtrace: get data success

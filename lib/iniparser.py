@@ -10,7 +10,7 @@ config.read('../doc/settings.ini')
 addr = config['socket']['addr']
 port = int(config['socket']['port'])
 
-db_url = 'mysql://root:Aa1234@localhost:3306/my_db'
+db_url = 'mysql://root:Aa1234@localhost:3306/my_db?charset=utf8'
 
 smtp_server = config['gmail_sending']['smtp_server']
 mail_port = config['gmail_sending']['port']
