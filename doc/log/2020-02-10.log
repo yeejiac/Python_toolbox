@@ -1,0 +1,49 @@
+2020-10-02 at 14:43:38 | DEBUG | weather data: translate data success !!
+2020-10-02 at 14:43:38 | DEBUG | Database: init db success
+2020-10-02 at 14:43:38 | ERROR | Database: insertFrame error
+2020-10-02 at 14:43:38 | DEBUG | weather data: insert weather data to DB success !!
+2020-10-02 at 14:45:25 | DEBUG | weather data: translate data success !!
+2020-10-02 at 14:45:25 | DEBUG | Database: init db success
+2020-10-02 at 14:45:25 | ERROR | Database: insertFrame error
+2020-10-02 at 14:46:55 | DEBUG | weather data: translate data success !!
+2020-10-02 at 14:46:55 | DEBUG | Database: init db success
+2020-10-02 at 14:50:43 | DEBUG | weather data: translate data success !!
+2020-10-02 at 14:50:43 | DEBUG | Database: init db success
+2020-10-02 at 14:51:13 | DEBUG | weather data: translate data success !!
+2020-10-02 at 14:51:13 | DEBUG | Database: init db success
+2020-10-02 at 14:54:13 | DEBUG | weather data: translate data success !!
+2020-10-02 at 14:54:13 | DEBUG | Database: init db success
+2020-10-02 at 14:54:51 | DEBUG | weather data: translate data success !!
+2020-10-02 at 14:54:51 | DEBUG | Database: init db success
+2020-10-02 at 14:58:43 | DEBUG | weather data: translate data success !!
+2020-10-02 at 14:58:43 | DEBUG | Database: init db success
+2020-10-02 at 15:00:43 | DEBUG | weather data: translate data success !!
+2020-10-02 at 15:00:43 | DEBUG | Database: init db success
+2020-10-02 at 15:07:45 | ERROR | weather data: remove failed !![WinError 2] 系統找不到指定的檔案。: 'weather_data/20201002.zip'
+2020-10-02 at 15:08:01 | ERROR | weather data: remove failed !![WinError 145] 目錄不是空的。: 'weather_data/20201002/'
+2020-10-02 at 15:17:02 | DEBUG | weather data: get day data success !!
+2020-10-02 at 15:17:04 | DEBUG | weather data: translate data success !!
+2020-10-02 at 15:17:21 | DEBUG | weather data: get day data success !!
+2020-10-02 at 15:17:22 | DEBUG | weather data: translate data success !!
+2020-10-02 at 15:18:24 | DEBUG | weather data: get day data success !!
+2020-10-02 at 15:18:25 | DEBUG | weather data: translate data success !!
+2020-10-02 at 15:18:25 | DEBUG | weather data: redundant data delete success !!
+2020-10-02 at 15:20:19 | DEBUG | weather data: get day data success !!
+2020-10-02 at 15:20:21 | DEBUG | weather data: translate data success !!
+2020-10-02 at 15:20:21 | DEBUG | Database: init db success
+2020-10-02 at 15:20:21 | ERROR | weather data: insert weather data to DB failed !!
+2020-10-02 at 15:21:44 | DEBUG | weather data: get day data success !!
+2020-10-02 at 15:21:46 | DEBUG | weather data: translate data success !!
+2020-10-02 at 15:21:46 | DEBUG | Database: init db success
+2020-10-02 at 15:21:46 | DEBUG | Database: insertFrame success
+2020-10-02 at 15:21:46 | DEBUG | weather data: insert weather data to DB success !!
+2020-10-02 at 15:23:49 | DEBUG | weather data: get day data success !!
+2020-10-02 at 15:23:50 | DEBUG | weather data: translate data success !!
+2020-10-02 at 15:23:50 | DEBUG | Database: init db success
+2020-10-02 at 15:23:50 | DEBUG | Database: insertFrame success
+2020-10-02 at 15:23:50 | DEBUG | weather data: insert weather data to DB success !!
+2020-10-02 at 15:50:25 | DEBUG | Database: init db success
+2020-10-02 at 15:50:45 | DEBUG | Database: init db success
+2020-10-02 at 15:53:20 | DEBUG | Database: init db success
+2020-10-02 at 15:56:09 | DEBUG | Database: init db success
+2020-10-02 at 15:56:09 | DEBUG | weather data: DataFrame founded

@@ -14,16 +14,16 @@ class ConnDB_base:
         logger.debug("Database: init db success")
 
     def insertFrame(self, df, tablename):
-        try:
-            df.to_sql(tablename, con=self.db_agent.engine,if_exists='append')
-            logger.debug("Database: insertFrame success")
-        except:
-            logger.error("Database: insertFrame error")
+        # try:
+        df.to_sql(tablename, con=self.db_agent.engine,if_exists='append')
+        logger.debug("Database: insertFrame success")
+        # except:
+        #     logger.error("Database: insertFrame error")
 
-    def showTable(self):
-        sql = "SELECT * FROM TEST"
+    def showTable(self, sql):
+        # sql = "SELECT * FROM TEST"
         df = pd.read_sql(sql, con=self.db_agent.engine)
-        print(df)
+        return df
 
 # if __name__ == '__main__':
 #     db = ConnDB_base(db_url)

@@ -4,8 +4,8 @@ import sys
 parent_dir = os.path.dirname(sys.path[0])
 sys.path.insert(0, parent_dir)
 import smtplib, ssl
-from lib.iniparser import *
-from lib.logwriter import *
+from iniparser import *
+from logwriter import *
 from getpass import getpass
 
 
@@ -22,15 +22,16 @@ class Mailsending_Base:
             server.ehlo() 
             server.starttls(context=self.context)
             server.ehlo()
-            password = getpass("Type your password and press enter: ")
-            server.login(mail_addr, password)
+            # password = getpass("Type your password and press enter: ")
+            server.login(mail_addr, mail_password)
             server.sendmail(mail_addr, self.receiver_mail, self.mail_context)
+            logger.debug("MailSending: sending success")
         except Exception as e:
             # Print any error messages to stdout
             logger.error(e)
         finally:
             server.quit() 
 
-# if __name__ == '__main__':
-#     mail_sending = Mailsending_Base("g3800482@gmail.com", "HI", "HIHI")
-#     mail_sending.send_mail()
+if __name__ == '__main__':
+    mail_sending = Mailsending_Base("yeejiac@gmail.com", "error", "errorLog Occur from CPP project")
+    mail_sending.send_mail()
