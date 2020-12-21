@@ -14,7 +14,7 @@ from bs4 import BeautifulSoup
 import subprocess
 
 
-def get_data(timing):
+def get_data_weather(timing):
     try:
         url = 'http://opendata.cwb.gov.tw/opendataapi?dataid=F-D0047-093&authorizationkey=CWB-3FB0188A-5506-41BE-B42A-3785B42C3823'
         r = requests.get(url, stream=True)
@@ -101,22 +101,8 @@ def handle_zipfile(timing):
     except:
         logger.error("weather data: insert weather data to DB failed !!")
 
-def file_del(timing):
-    try:
-        subprocess.call([r'del_redundant.bat', timing])
-        logger.debug("weather data: redundant data delete success !!")
-    except:
-        logger.error("weather data: redundant data delete failed !!")
-
-def closest(num, arr):
-    curr = arr[0]
-    for val in arr:
-        if abs (num - val) < abs (num - curr):
-            curr = val
-    return curr
-
 if __name__ == '__main__':
-    timeList = [0,3,6,9,12,15,18,21]
+    
     today = datetime.date.today()
     d1 = today.strftime("%Y%m%d")
     d2 = today.strftime("%Y-%m-%d")
@@ -130,7 +116,7 @@ if __name__ == '__main__':
     if df.empty:
         print('DataFrame is empty!')
         logger.debug("weather data: DataFrame is empty! Try parse the new data")
-        # get_data(d1)
+        # get_data_weather(d1)
         # handle_zipfile(d1)
         # file_del(d1)
     else:

@@ -15,7 +15,7 @@ import subprocess
 
 # 
 
-def get_data(timing):
+def get_data_tide(timing):
     try:
         url = 'http://opendata.cwb.gov.tw/opendataapi?dataid=F-A0012-002&authorizationkey=CWB-3FB0188A-5506-41BE-B42A-3785B42C3823'
         r = requests.get(url, stream=True)
@@ -87,5 +87,5 @@ if __name__ == '__main__':
     today = datetime.date.today()
     d1 = today.strftime("%Y%m%d")
 
-    # get_data(d1)
+    get_data(d1)
     handle_xmlfile(d1)
