@@ -90,11 +90,12 @@ class Account:
         inv = Inventory(stock_vol, price, self.nid)
         self.inventoryList.append(inv)
         self.nid+=1
+        self.inventoryList.append(inv)
         print("買進股票 : {} 時間 : {}".format(price, date))
 
     def sell(self, stock_vol, increase_price, date, nid):
         self.money = self.money + increase_price
-        [i.setSellInfor(increase_price/(stock_vol*1000)) for i in self.inventoryList if i.nid == nid ]
+        [i.setSellInfor(increase_price/(stock_vol*1000)) for i in self.inventoryList if i.nid == nid]
         print("賣出股票 : {} 時間 : {}".format(increase_price/(stock_vol*1000), date))
 
     def getProfit(self): #已實現損益
@@ -115,17 +116,22 @@ def main():
     # for i in range(1,12):
     #     datestring = "2020" + str(i).zfill(2) + "01"
     #     get_stock_history(datestring, 2885, 'm')
-    readFromDB(2885, [3,5])
-    # acc = Acount()
+    df = readFromDB(2885, [3,5])
+    acc = Account()
+    buyFlag = True
+
+    for index, i in df.iterrows():
+        acc.price_now = i['收盤價']
+        if i['收盤價'] > i['MA3'] and i['MA3'] != 0 and i['MA5'] != 0 and buyFlag:
+            acc.buy(1, acc.price_now*1000, acc.price_now, i['日期'])
+            buyFlag = False
+        if len(acc.inventoryList) > 0 and i['收盤價'] - acc.price_now >= 1:
+            acc.sell(1, acc.price_now*1000, i['日期'],acc.inventoryList[-1].nid)
+            buyFlag = True
+
+    acc.printInfo()
 
 
-
-
-
-
-
-
-    
 if __name__ == '__main__':
     main()
 
