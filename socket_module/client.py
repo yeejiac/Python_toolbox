@@ -3,7 +3,7 @@ import os
 import sys
 parent_dir = os.path.dirname(sys.path[0])
 sys.path.insert(0, parent_dir)
-from lib.iniparser import * 
+# from lib.iniparser import * 
 from lib.logwriter import *
 import queue 
 import threading
@@ -38,4 +38,4 @@ class Client_socket:
         self.client.close()
 
 if __name__ == '__main__':
-    conn = Client_socket(addr, port)
+    conn = Client_socket("192.168.56.104", 1203)
